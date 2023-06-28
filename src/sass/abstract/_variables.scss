@@ -1,0 +1,44 @@
+// COLOR VARIABLES
+$color-primary: rgb(1, 10, 19);
+
+$color-secondary: rgb(0, 90, 130);
+
+$color-tertiary: rgb(60, 60, 65); 
+
+$color-grey: #aaa; // tbd
+
+$color-highlights: rgb(200, 155, 60);
+
+$color-black: #000; // tbd
+$color-white: rgb(240, 230, 210);
+
+// FONT VARIABLES
+@font-face {
+    font-family: "Beaufort for LoL Bold";
+    src: url("/public/fonts/BeaufortforLOL-Bold.otf");
+}
+@font-face {
+    font-family: "Beaufort for LoL Medium";
+    src: url("/public/fonts/BeaufortforLOL-Medium.otf");
+}
+@font-face {
+    font-family: "Spiegel Regular";
+    src: url("/public/fonts/Spiegel-Regular.otf");
+}
+
+$font-primary: "Spiegel Regular", sans-serif; // Normal font for text
+$font-heading: "Beaufort for Lol Bold", sans-serif; // Font for H1s, H2s, H3s, etc.
+$font-numbers: "Beaufort for Lol Medium", sans-serif; // Font for numbers
+$font-heading-weight: 700;
+$font-default-size: 1.6rem;
+
+// BOX SHADOW VARIABLES
+$box-shadow-light: 0 2rem 5rem rgba(0, 0, 0, .1);
+$box-shadow-dark: 0 2rem 6rem rgba( 0, 0, 0, .4);
+
+// RESPONSIVE BREAKPOINTS
+$bp-largest: 75em; // 1200px
+$bp-large: 62.5em; // 1000px
+$bp-medium: 50em; // 800px
+$bp-small: 37.5em; // 600px
+

@@ -1,0 +1,17 @@
+%heading { // @extend %heading;
+    font-family: $font-heading;
+    font-weight: $font-heading-weight;
+    text-rendering: optimizelegibility;
+}
+
+.heading-3 {
+    @extend %heading;
+    text-transform: uppercase;
+    font-size: 3rem;
+    letter-spacing: 1.5px;
+    line-height: 3.75rem;
+}
+
+.display-number {
+    font-family: $font-numbers;
+}

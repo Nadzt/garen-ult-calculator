@@ -1,0 +1,52 @@
+@media (prefers-reduced-motion: no-preference) {
+    :root {
+      scroll-behavior: smooth;
+    }
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+// ::selection {
+//     background-color: $color-primary;
+//     color: $color-white;
+// }
+// .prevent-select {
+//     -webkit-user-select: none;
+//     -ms-user-select: none;
+//     user-select: none;
+// }
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; // 10px
+
+    @media only screen and (max-width: $bp-large) {
+        font-size: 50%; // 8px
+    }
+}
+
+body {
+    background-color: $color-primary;
+    font-family: $font-primary;
+    color: $color-white;
+    font-weight: 400;
+    letter-spacing: 0.45px;
+    line-height: 2.65rem;
+    font-size: 1.8rem;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+    color: currentColor;
+}
+
+ul {
+    list-style: none;
+}

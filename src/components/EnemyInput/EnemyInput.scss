@@ -1,0 +1,59 @@
+.enemy {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    background-image: url("/src/images/magic.png");
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;
+
+    &__image {
+        max-height: 400px;
+        margin: 2rem auto 5rem;
+    }
+    &__label {
+        text-transform: uppercase;
+        font-size: 1.85rem;
+        font-weight: 700;
+        letter-spacing: 1.4px;
+        line-height: 2.4rem;
+    }
+    &__input-form {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin-top: 1rem;
+    }
+    &__input {
+        flex: 1;
+        border: none;
+        border-top-left-radius: 4px;
+        border-bottom-left-radius: 4px;
+        padding: .5rem 1.5rem;
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: textfield;
+        &:focus {
+            outline: none;
+        }
+    }
+    &__button {
+        border: none;
+        border-top-right-radius: 4px;
+        border-bottom-right-radius: 4px;
+        padding: .5rem 1.5rem;
+        background-color: $color-secondary;
+        color: $color-white;
+        font-weight: 600;
+        letter-spacing: 1.2px;
+        text-transform: uppercase;
+        cursor: pointer;
+        // transition: all .2s ease-in;
+
+        &:active {
+            color: $color-secondary;
+            background-color: $color-primary;
+            outline: 1px solid $color-secondary;
+        }
+    }
+}

@@ -1,0 +1,18 @@
+.app {
+    max-width: 1000px;
+    margin: auto;
+
+    &__title {
+        border-bottom: 1px solid $color-tertiary;
+        margin: 5rem 0 6rem;
+    }
+
+    &__content {
+        display: flex;
+        gap: 5%;
+    }
+
+    &__content > div {
+        flex: 1 0 45%;
+    }
+}
