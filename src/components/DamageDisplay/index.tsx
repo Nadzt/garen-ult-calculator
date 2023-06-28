@@ -4,7 +4,7 @@ type Props = {
 
 const calculateDmg = (maxHP: number, baseDmg: number, missingHpPerc: number): number => {
     // formula => threshold = (CHp) - (baseDmg + missingHpPerc * (MaxHp - CHp))
-    const threshold = Math.ceil((100 * baseDmg + missingHpPerc * maxHP) / (100 + missingHpPerc))
+    const threshold = Math.floor((100 * baseDmg + missingHpPerc * maxHP) / (100 + missingHpPerc))
     return Math.min(threshold, maxHP)
 }
 
