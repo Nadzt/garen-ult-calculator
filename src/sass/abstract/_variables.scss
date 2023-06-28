@@ -15,15 +15,15 @@ $color-white: rgb(240, 230, 210);
 // FONT VARIABLES
 @font-face {
     font-family: "Beaufort for LoL Bold";
-    src: url("/public/fonts/BeaufortforLOL-Bold.otf");
+    src: url("/fonts/BeaufortforLOL-Bold.otf");
 }
 @font-face {
     font-family: "Beaufort for LoL Medium";
-    src: url("/public/fonts/BeaufortforLOL-Medium.otf");
+    src: url("/fonts/BeaufortforLOL-Medium.otf");
 }
 @font-face {
     font-family: "Spiegel Regular";
-    src: url("/public/fonts/Spiegel-Regular.otf");
+    src: url("/fonts/Spiegel-Regular.otf");
 }
 
 $font-primary: "Spiegel Regular", sans-serif; // Normal font for text

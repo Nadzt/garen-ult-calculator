@@ -1,7 +1,8 @@
-import React, { useState } from "react"
+import { useState } from "react"
 
 import DamageDisplay from "./components/DamageDisplay"
 import EnemyInput from "./components/EnemyInput"
+import FixedHpButton from "./components/FixedHpButton"
 
 const App = () => {
     const [enemyHp, setEnemyHp] = useState(1000)
@@ -12,6 +13,15 @@ const App = () => {
             <section className="app__content">
                 <EnemyInput enemyHp={enemyHp} setEnemyHp={setEnemyHp}/>
                 <DamageDisplay enemyHp={enemyHp} />
+            </section>
+            <h5 className="fixed__title">or select from one of the following:</h5>
+            <section className="fixed__container">
+                <FixedHpButton setEnemyHp={setEnemyHp} hp={1250}/>
+                <FixedHpButton setEnemyHp={setEnemyHp} hp={1500}/>
+                <FixedHpButton setEnemyHp={setEnemyHp} hp={1750}/>
+                <FixedHpButton setEnemyHp={setEnemyHp} hp={2000}/>
+                <FixedHpButton setEnemyHp={setEnemyHp} hp={2250}/>
+                <FixedHpButton setEnemyHp={setEnemyHp} hp={2500}/>
             </section>
         </div>
     )
