@@ -6,11 +6,18 @@
     background-size: contain;
     background-position: top;
     background-repeat: no-repeat;
+    @include responsive(phone) { 
+        background-image: none;   
+    }
 
     &__image {
         max-height: 400px;
         margin: 2rem auto 5rem;
+        @include responsive(phone) { 
+            display: none;
+        }
     }
+
     &__label {
         text-transform: uppercase;
         font-size: 1.85rem;
@@ -18,12 +25,17 @@
         letter-spacing: 1.4px;
         line-height: 2.4rem;
     }
+
     &__input-form {
         display: flex;
         flex-direction: row;
         width: 100%;
-        margin-top: 1rem;
+        margin-top: 1rem; 
+        @include responsive(phone) { 
+            margin-bottom: 4rem;
+        }
     }
+
     &__input {
         flex: 1;
         border: none;
@@ -37,6 +49,7 @@
             outline: none;
         }
     }
+
     &__button {
         border: none;
         border-top-right-radius: 4px;

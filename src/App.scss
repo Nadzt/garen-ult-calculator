@@ -2,14 +2,30 @@
     max-width: 1000px;
     margin: auto;
 
+    @include responsive(notebook) { 
+        width: 90%;
+    }
+
     &__title {
         border-bottom: 1px solid $color-tertiary;
         margin: 5rem 0 6rem;
+        @include responsive(phone) { 
+            margin: 4rem 0;
+        }
     }
 
     &__content {
         display: flex;
+        flex-wrap: wrap;
         gap: 5%;
+
+        @include responsive(notebook) { 
+            margin-bottom: 4rem;
+        }
+
+        @include responsive(phone) { 
+            margin-bottom: 0;
+        }
     }
 
     &__content > div {
