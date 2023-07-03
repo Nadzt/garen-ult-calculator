@@ -1,5 +1,3 @@
-import React from 'react'
-
 const GithubLink = () => {
     return (
         <a href="https://github.com/Nadzt/garen-ult-calculator" target='_blank'>
