@@ -7,7 +7,7 @@ import GithubLink from "./components/GithubLink"
 
 const App = () => {
     const [enemyHp, setEnemyHp] = useState(1000)
-    console.log(enemyHp)
+
     return (
         <div className="app">
             <GithubLink />
