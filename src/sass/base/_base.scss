@@ -12,15 +12,10 @@
     box-sizing: inherit;
 }
 
-// ::selection {
-//     background-color: $color-primary;
-//     color: $color-white;
-// }
-// .prevent-select {
-//     -webkit-user-select: none;
-//     -ms-user-select: none;
-//     user-select: none;
-// }
+::selection {
+    background-color: $color-highlights;
+    color: $color-primary;
+}
 
 html {
     box-sizing: border-box;
@@ -39,6 +34,7 @@ body {
     letter-spacing: 0.45px;
     line-height: 2.65rem;
     font-size: 1.8rem;
+    cursor: url("src/images/cursor.png"), auto;
 }
 
 a,
